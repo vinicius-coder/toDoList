@@ -1,0 +1,140 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 0 5%;
+}
+
+form {
+    display: flex;
+    width: 736px;
+    justify-content: center;
+
+    position: relative;
+    top: -27.5px;
+}
+
+.taskName {
+    width: 638px;
+    padding: 1rem 0 1rem 1rem;
+
+    background: var(--gray-500);
+
+    color: var(--gray-300);
+
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.taskName:focus {
+    color: var(--gray-100);
+    cursor: unset;
+}
+
+.taskButton {
+    width: 90px;
+    padding: 16 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 8px;
+
+    border-radius: 8px;
+
+    color: var(--white);
+    background-color: var(--blue-dark);
+
+    cursor: pointer
+    
+}
+
+.taskButton:hover {
+    background-color: var(--blue);
+}
+
+.plusIcon {
+    margin-left: 5px;
+}
+
+.plusIcon:focus {
+    color: var(--gray-100);
+    cursor: unset;
+}
+
+.listContainer {
+    width: 736px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+.listTotalTask {
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.listDoneTask {
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.total {
+    padding: .1rem .7rem;
+    margin-left: 8px;
+
+    color: var(--gray-200);
+    font-size: 14px;
+
+    background-color: var(--gray-400);
+    border-radius: 50px;
+}
+
+.taskListContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 24px;
+
+    border-top: 1px solid #333333;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px){
+
+    html {
+        font-size: 87.5%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    form, .taskName, .listContainer {
+        width: 90%;
+    }
+
+    .taskListContainer {
+        font-size: 1rem;
+    }
+}

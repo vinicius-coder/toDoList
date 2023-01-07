@@ -1,0 +1,15 @@
+.header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.25rem 0;
+
+    background: var(--gray-700);
+}
+
+header img {
+    width: 126px;
+    height: 48px;
+}
